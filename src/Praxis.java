@@ -13,7 +13,7 @@ public class Praxis {
       //Patientenliste, leer
         String[] namen = new String[20];
         for (int i = 0; i < namen.length; i++) {
-            namen[i] = "-frei-";
+            namen[i] = "";
         }
       //Hauptmenü
         String hauptmenü = "";
@@ -48,11 +48,11 @@ public class Praxis {
                 case 0: System.out.println("Bitte Eingabe wiederholen");
                         break;
 
-                case 1: if (namen[namen.length-1] != "-frei-") {
+                case 1: if (namen[namen.length-1] != "") {
                             System.out.println("Liste voll!");
                         } else {
                             for (int i = 0; i < namen.length; i++) {
-                                if (namen[i] == "-frei-") {
+                                if (namen[i] == "") {
                                     System.out.println("Name:");
                                     namen[i] = reader.readLine();
                                     break;
@@ -64,7 +64,7 @@ public class Praxis {
                         reader.readLine();
                         break;
 
-                case 2: if (namen[0] == "-frei-") {
+                case 2: if (namen[0] == "") {
                             System.out.println("Liste leer");
                         } else {
                             System.out.println("gesuchter Patient:");
@@ -86,7 +86,7 @@ public class Praxis {
 
                 case 3: int counter = 0;
                         for (int i = 0; i < namen.length; i++) {
-                            if (!namen[i].equals("-frei-")) counter++;
+                            if (!namen[i].equals("")) counter++;
                         }
                         if (counter == 0) System.out.println("Liste leer");
                         else if (counter == 1) System.out.println("1 Patient ist angemeldet.");
@@ -96,11 +96,11 @@ public class Praxis {
                         reader.readLine();
                         break;
 
-                case 4: if (namen[0].equals("-frei-")) System.out.println("Liste leer");
+                case 4: if (namen[0].equals("")) System.out.println("Liste leer");
                         else {
                             String liste = "";
                             for (int i = 0; i < namen.length; i++) {
-                                if (!namen[i].equals("-frei-")) {
+                                if (!namen[i].equals("")) {
                                     liste += String.format("%2s.: " + namen[i] + "\n", (i + 1));
                                 } else break;
                             }
@@ -123,7 +123,7 @@ public class Praxis {
                         for (int i = 0; i < namen.length-1; i++) {
                             namen[i] = namen[i+1];
                         }
-                        namen[namen.length-1] = "-frei-";
+                        namen[namen.length-1] = "";
 
                         System.out.println("<┘: Zurück zum Hauptmenü");
                         reader.readLine();
