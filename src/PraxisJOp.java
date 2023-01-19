@@ -38,8 +38,7 @@ public class PraxisJOp {
                                     nameOK = true;
                                 }
                             } catch (Exception e) {
-                                JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Ungültige Eingabe", "Fehler",
-                                    JOptionPane.ERROR_MESSAGE);
+                                nameOK = true;
                             }
                         }
                     }
