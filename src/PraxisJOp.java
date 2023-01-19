@@ -28,7 +28,7 @@ Hauptmenü*/ input = (JOptionPane.showOptionDialog(null, "Auswahl:", "Hauptmenü
                     break;
 
                 case 1: // Überprüfen, ob Patient angemeldet ist
-                    if (namen.size() == 0) {
+                    if (namen.isEmpty()) {
                         JOptionPane.showMessageDialog(null, "Liste leer", "Fehler", JOptionPane.ERROR_MESSAGE);
                     } else {
                         String find = "";
@@ -50,7 +50,7 @@ Hauptmenü*/ input = (JOptionPane.showOptionDialog(null, "Auswahl:", "Hauptmenü
                     break;
 
                 case 2: // Wie viele Patienten angemeldet sind
-                    if (namen.size() == 0) JOptionPane.showMessageDialog(null, "Liste leer", "Fehler", JOptionPane.ERROR_MESSAGE);
+                    if (namen.isEmpty()) JOptionPane.showMessageDialog(null, "Liste leer", "Fehler", JOptionPane.ERROR_MESSAGE);
                     else if (namen.size() == 1) JOptionPane.showMessageDialog(null, "1 Patient ist angemeldet.", "Anzahl Anmeldungen", JOptionPane.INFORMATION_MESSAGE);
                     else {
                         String size = String.format("%d Patienten sind angemeldet.", namen.size());
@@ -59,7 +59,7 @@ Hauptmenü*/ input = (JOptionPane.showOptionDialog(null, "Auswahl:", "Hauptmenü
                     break;
 
                 case 3: // Liste angemeldeter Patienten
-                    if (namen.size() == 0) JOptionPane.showMessageDialog(null, "Liste leer", "Fehler", JOptionPane.ERROR_MESSAGE);
+                    if (namen.isEmpty()) JOptionPane.showMessageDialog(null, "Liste leer", "Fehler", JOptionPane.ERROR_MESSAGE);
                     else {
                         String liste = "Anmeldungsliste:\n";
                         for (int i = 0; i < namen.size(); i++) {
@@ -70,7 +70,7 @@ Hauptmenü*/ input = (JOptionPane.showOptionDialog(null, "Auswahl:", "Hauptmenü
                     break;
 
                 case 4: // Patienten aufrufen
-                    if (namen.size() == 0) JOptionPane.showMessageDialog(null, "Liste leer", "Fehler", JOptionPane.ERROR_MESSAGE);
+                    if (namen.isEmpty()) JOptionPane.showMessageDialog(null, "Liste leer", "Fehler", JOptionPane.ERROR_MESSAGE);
                     else {
                         String aufruf = (String.format("Patienten aufrufen:\n%s", namen.get(0)));
                         namen.remove(0);
