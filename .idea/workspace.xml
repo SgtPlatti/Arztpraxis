@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db3956a6-e035-4af1-93aa-cb04fd36629a" name="Changes" comment="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements">
-      <change afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
+    <list default="true" id="db3956a6-e035-4af1-93aa-cb04fd36629a" name="Changes" comment="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements&#10;added title header">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PraxisJOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PraxisJOp.java" afterDir="false" />
     </list>
@@ -77,12 +76,20 @@
       <option name="project" value="LOCAL" />
       <updated>1674114954043</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements&#10;added title header">
+      <created>1674116684155</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674116684155</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WIP&#10;minor performance improvement" />
     <MESSAGE value="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements" />
+    <MESSAGE value="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements&#10;added title header" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements&#10;added title header" />
   </component>
 </project>

@@ -13,8 +13,8 @@ public class PraxisJOp {
         ArrayList<String> namen = new ArrayList<>(); // Patientenliste, leer
         String[] hauptmenü = {"Anmeldung", "Suchen", "Anzahl", "Liste", "Aufruf", "Beenden"};
 
-        while (valid) {/*
-Hauptmenü*/
+        while (valid) {
+            /*Hauptmenü*/
             input = (JOptionPane.showOptionDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Auswahl:</html>", "Hauptmenü",
                     0, JOptionPane.PLAIN_MESSAGE, null, hauptmenü, hauptmenü[0]));
 
@@ -25,8 +25,23 @@ Hauptmenü*/
                                 JOptionPane.WARNING_MESSAGE);
                         break;
                     } else {
-                        namen.add(JOptionPane.showInputDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Name:", "Anmeldung",
-                                JOptionPane.QUESTION_MESSAGE));
+                        boolean nameOK = false;
+                        while (nameOK == false) {
+                            String pName = (JOptionPane.showInputDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Name:", "Anmeldung",
+                                    JOptionPane.QUESTION_MESSAGE));
+                            try {
+                                if (pName.equals("")) {
+                                    JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Ungültige Eingabe", "Fehler",
+                                            JOptionPane.ERROR_MESSAGE);
+                                } else {
+                                    namen.add(pName);
+                                    nameOK = true;
+                                }
+                            } catch (Exception e) {
+                                JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Ungültige Eingabe", "Fehler",
+                                    JOptionPane.ERROR_MESSAGE);
+                            }
+                        }
                     }
                     break;
 
@@ -57,8 +72,9 @@ Hauptmenü*/
                     break;
 
                 case 2: // Wie viele Patienten angemeldet sind
-                    if (namen.isEmpty()) JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Liste leer",
-                            "Fehler", JOptionPane.ERROR_MESSAGE);
+                    if (namen.isEmpty())
+                        JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Liste leer",
+                                "Fehler", JOptionPane.ERROR_MESSAGE);
                     else if (namen.size() == 1) JOptionPane.showMessageDialog(null,
                             "<html> <h3> ARM 2.77 </h3>" + "1 Patient ist angemeldet.", "Anzahl Anmeldungen",
                             JOptionPane.INFORMATION_MESSAGE);
@@ -70,8 +86,9 @@ Hauptmenü*/
                     break;
 
                 case 3: // Liste angemeldeter Patienten
-                    if (namen.isEmpty()) JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Liste leer",
-                            "Fehler", JOptionPane.ERROR_MESSAGE);
+                    if (namen.isEmpty())
+                        JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Liste leer",
+                                "Fehler", JOptionPane.ERROR_MESSAGE);
                     else {
                         String liste = "Anmeldungsliste:\n";
                         for (int i = 0; i < namen.size(); i++) {
@@ -83,8 +100,9 @@ Hauptmenü*/
                     break;
 
                 case 4: // Patienten aufrufen
-                    if (namen.isEmpty()) JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Liste leer",
-                            "Fehler", JOptionPane.ERROR_MESSAGE);
+                    if (namen.isEmpty())
+                        JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Liste leer",
+                                "Fehler", JOptionPane.ERROR_MESSAGE);
                     else {
                         String aufruf = (String.format("Patienten aufrufen:\n%s", "<html><h2>" + namen.get(0) + "</h2></html>"));
                         namen.remove(0);
