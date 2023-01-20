@@ -89,11 +89,11 @@ public class PraxisJOp {
                         JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Liste leer",
                                 "Fehler", JOptionPane.ERROR_MESSAGE);
                     else {
-                        String liste = "Anmeldungsliste:\n";
+                        String liste = "<html> <h4> Anmeldungsliste: </h4> </html>\n";
                         for (int i = 0; i < namen.size(); i++) {
-                            liste += String.format("%2s.: " + namen.get(i) + "\n", (i + 1));
+                            liste += String.format("<html> <ul> <li> %2s " + namen.get(i) + "</li>\n", (i + 1));
                         }
-                        JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + liste, "Anmeldungen",
+                        JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3> </html>" + liste, "Anmeldungen",
                                 JOptionPane.INFORMATION_MESSAGE);
                     }
                     break;
