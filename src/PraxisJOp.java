@@ -52,6 +52,9 @@ public class PraxisJOp {
                         String find = "";
                         String search = JOptionPane.showInputDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Gesuchter Patient:",
                                 "Patientensuche", JOptionPane.QUESTION_MESSAGE);
+                        if (search == null) {
+                            break;
+                        }
                         for (int i = 0; i < namen.size(); ) {
                             if (search.equalsIgnoreCase(namen.get(i))) {
                                 find = ("Gefunden an Stelle " + (i + 1));
