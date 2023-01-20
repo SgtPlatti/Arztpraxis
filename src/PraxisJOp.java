@@ -72,7 +72,7 @@ public class PraxisJOp {
                         }
                     }
                     break;
-//(namen.size() > 1 ? "en" : "")
+
                 case 2: // Wie viele Patienten angemeldet sind
                     if (namen.isEmpty())
                         JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Liste leer",
