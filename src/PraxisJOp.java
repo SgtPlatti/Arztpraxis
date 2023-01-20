@@ -72,16 +72,13 @@ public class PraxisJOp {
                         }
                     }
                     break;
-
+//(namen.size() > 1 ? "en" : "")
                 case 2: // Wie viele Patienten angemeldet sind
                     if (namen.isEmpty())
                         JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Liste leer",
                                 "Fehler", JOptionPane.ERROR_MESSAGE);
-                    else if (namen.size() == 1) JOptionPane.showMessageDialog(null,
-                            "<html> <h3> ARM 2.77 </h3>" + "1 Patient ist angemeldet.", "Anzahl Anmeldungen",
-                            JOptionPane.INFORMATION_MESSAGE);
                     else {
-                        String size = String.format("%d Patienten sind angemeldet.", namen.size());
+                        String size = String.format("%d Patient" + (namen.size() > 1 ? "en sind " : " ist ") + "angemeldet.", namen.size());
                         JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + size, "Anzahl Anmeldungen",
                                 JOptionPane.INFORMATION_MESSAGE);
                     }

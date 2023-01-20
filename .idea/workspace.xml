@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db3956a6-e035-4af1-93aa-cb04fd36629a" name="Changes" comment="Praxis Blatt 1&#10;fertig&#10;JavaSwing&#10;Bugfixes JOp">
+    <list default="true" id="db3956a6-e035-4af1-93aa-cb04fd36629a" name="Changes" comment="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements&#10;added title header&#10;catch user input errors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PraxisJOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PraxisJOp.java" afterDir="false" />
     </list>
@@ -34,7 +34,6 @@
   </component>
   <component name="ProjectId" id="2KSXOY5tw8o2rTehqjPOwvJnI7l" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -44,8 +43,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/SchuesslerF/Desktop/IntelliJ Workspace/Arztpraxis/src/Praxis.java&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -57,34 +55,41 @@
       <option name="presentableId" value="Default" />
       <updated>1673968925565</updated>
     </task>
-    <task id="LOCAL-00001" summary="Praxis Blatt 1&#10;fertig">
-      <created>1674048777365</created>
+    <task id="LOCAL-00001" summary="WIP&#10;minor performance improvement">
+      <created>1674038952107</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1674048777365</updated>
+      <updated>1674038952107</updated>
     </task>
-    <task id="LOCAL-00002" summary="Praxis Blatt 1&#10;fertig&#10;JavaSwing">
-      <created>1674121683300</created>
+    <task id="LOCAL-00002" summary="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements">
+      <created>1674114638285</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1674121683300</updated>
+      <updated>1674114638285</updated>
     </task>
-    <task id="LOCAL-00003" summary="Praxis Blatt 1&#10;fertig&#10;JavaSwing&#10;Bugfixes JOp">
-      <created>1674208553579</created>
+    <task id="LOCAL-00003" summary="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements">
+      <created>1674114954043</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1674208553579</updated>
+      <updated>1674114954043</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements&#10;added title header">
+      <created>1674116684155</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674116684155</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Praxis Blatt 1&#10;fertig" />
-    <MESSAGE value="Praxis Blatt 1&#10;fertig&#10;JavaSwing" />
-    <MESSAGE value="Praxis Blatt 1&#10;fertig&#10;JavaSwing&#10;Bugfixes JOp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Praxis Blatt 1&#10;fertig&#10;JavaSwing&#10;Bugfixes JOp" />
+    <MESSAGE value="WIP&#10;minor performance improvement" />
+    <MESSAGE value="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements" />
+    <MESSAGE value="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements&#10;added title header" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP&#10;minor performance improvement&#10;class: Liste&#10;GUI improvements&#10;added title header" />
   </component>
 </project>
