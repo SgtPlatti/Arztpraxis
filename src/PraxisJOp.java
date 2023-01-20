@@ -103,7 +103,7 @@ public class PraxisJOp {
                         JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Liste leer",
                                 "Fehler", JOptionPane.ERROR_MESSAGE);
                     else {
-                        String aufruf = (String.format("Patienten aufrufen:\n%s", "<html><h2>" + namen.get(0) + "</h2></html>"));
+                        String aufruf = (String.format("Patienten aufrufen:\n%s", "<html><ul><li><h2>" + namen.get(0) + "</h2></li></ul></html>"));
                         namen.remove(0);
                         JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + aufruf, "Aufruf",
                                 JOptionPane.WARNING_MESSAGE);
