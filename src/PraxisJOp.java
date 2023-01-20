@@ -63,12 +63,12 @@ public class PraxisJOp {
                                 i++;
                             }
                         }
-                        if (!find.equals("")) {
-                            JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + find, "Patientensuche",
-                                    JOptionPane.INFORMATION_MESSAGE);
-                        } else {
+                        if (find.equals("")) {
                             JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + "Patient nicht gefunden",
                                     "Patientensuche", JOptionPane.ERROR_MESSAGE);
+                        } else {
+                            JOptionPane.showMessageDialog(null, "<html> <h3> ARM 2.77 </h3>" + find, "Patientensuche",
+                                    JOptionPane.INFORMATION_MESSAGE);
                         }
                     }
                     break;
